@@ -32,6 +32,7 @@ pub const THRIFT: &str = "thrift";
 pub const STRINGS: &str = "strings";
 pub const TS_SCHEME: &str = "scm"; // We support scheme files that contain tree-sitter query
 pub const SCALA: &str = "scala";
+pub const RUBY: &str = "rb";
 
 pub const REGEX_QUERY_PREFIX: &str = "rgx ";
 pub const CONCRETE_SYNTAX_QUERY_PREFIX: &str = "cs ";
@@ -193,7 +194,7 @@ pub(crate) fn default_allow_dirty_ast() -> bool {
 }
 
 pub(crate) fn default_graph_validation() -> bool {
-  true
+  false
 }
 
 pub(crate) fn default_experiment_dyn() -> bool {
